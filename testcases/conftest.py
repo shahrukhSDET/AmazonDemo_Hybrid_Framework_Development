@@ -11,7 +11,7 @@ from selenium.webdriver.chrome.service import Service
 
 @pytest.fixture(params=["chrome"], scope="class")
 def setup(request):
-    s = Service("C:\Program Files\JetBrains\chromedriver_win32\chromedriver")
+    s = Service("D:\softwares\chromedriver-win64\chromedriver")
     if request.param == "chrome":
         driver = webdriver.Chrome(service=s)
     if request.param == "firefox":
